@@ -1,0 +1,19 @@
+<%- @agents.each do |agent| %>
+  <div class="agent" data-agent-id="<%= agent.id %>">
+    <div class="pi">
+      <div class="name"><%= agent.name %></div>
+      <div class="brokerage"><%= agent.brokerage %></div>
+    </div>
+    <div class="stats">
+      <div class="side-stats">
+        <b>Side:</b> Buyers: <%= agent.agent_stat.buyers %> Sellers: <%= agent.agent_stat.sellers %>
+      </div>
+      <div class="type-stats">
+        <b>Type:</b> SFH: <%= agent.agent_stat.sfh %> Condo: <%= agent.agent_stat.condo %> Townhome: <%= agent.agent_stat.townhome %> Mobile: <%= agent.agent_stat.mobile %> Land: <%= agent.agent_stat.land %>
+      </div>
+      <div class="price-stats">
+        <b>Price:</b> $0 - $150k: <%= agent.agent_stat.pr1 %> $150k - $300k: <%= agent.agent_stat.pr2 %> $300k - $500k: <%= agent.agent_stat.pr3 %> $500k - $750k: <%= agent.agent_stat.pr4 %> $750k - $1m: <%= agent.agent_stat.pr5 %> $1m+: <%= agent.agent_stat.pr6 %>
+      </div>
+    </div>
+  </div>
+<% end %>

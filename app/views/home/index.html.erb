@@ -1,0 +1,52 @@
+<section class="content">
+  <header>
+    <h1>Find An Agent</h1>
+  </header>
+
+  <main>
+    <%= form_for AgentSearch.new do |f| %>
+      <fieldset>
+        <h3>Are you buying or selling?</h3>
+        <%= radio_button_tag(:txn_side, "buying")  %>
+        <%= label_tag "Buying" %>
+        <%= radio_button_tag(:txn_side, "selling") %>
+        <%= label_tag "Selling" %>
+      </fieldset>
+      <fieldset>
+        <h3>What type of property?</h3>
+        <%= radio_button_tag(:prop_type, "sfh") %>
+        <%= label_tag "Sfh" %>
+        <%= radio_button_tag(:prop_type, "condo") %>
+        <%= label_tag "Condo" %>
+        <%= radio_button_tag(:prop_type, "townhome") %>
+        <%= label_tag "Townhome" %>
+        <%= radio_button_tag(:prop_type, "mobile") %>
+        <%= label_tag "Mobile" %>
+        <%= radio_button_tag(:prop_type, "land") %>
+        <%= label_tag "Land" %>
+      </fieldset>
+      <fieldset>
+        <h3>What price range?</h3>
+        <%= radio_button_tag(:price_range, "0to150k") %>
+        <%= label_tag "$0 - $150k" %>
+        <%= radio_button_tag(:price_range, "150kto300k") %>
+        <%= label_tag "$150k - $300k" %>
+        <%= radio_button_tag(:price_range, "300kto500k") %>
+        <%= label_tag "$300k - $500k" %>
+        <%= radio_button_tag(:price_range, "500kto750k") %>
+        <%= label_tag "$500k - $750k" %>
+        <%= radio_button_tag(:price_range, "750kto1m") %>
+        <%= label_tag "$750k - $1m" %>
+        <%= radio_button_tag(:price_range, "1mplus") %>
+        <%= label_tag "$1m+" %>
+      </fieldset>
+      <fieldset class="actions">
+        <input type="submit" value="Search"/>
+      </fieldset>
+    <% end %>
+  </main>
+
+  <footer>
+    <p>HomeLight Interview Kit &copy; 2017</p>
+  </footer>
+</section>

@@ -1,0 +1,2 @@
+module AgentSearchesHelper
+end
