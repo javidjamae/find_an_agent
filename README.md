@@ -23,7 +23,7 @@ Full Stack Applicants:
 
   1.) Fill in the AgentSearch#find_agent_matches! method so it returns a better result set
   2.) Turn the price range radio buttons into checkboxes and use them in the AgentSearch#find_agent_matches! method
-  3.) 
+  3.)
 
 Frontend Candidates:
 

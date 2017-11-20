@@ -12,11 +12,29 @@ main {
 
     .pi {
       float: left;
-      width: 150px;
+      margin-left: 20px;
+      width: 350px;
+
+      .name h2 {
+        margin-bottom: 10px;
+      }
+      .brokerage h4 {
+        margin-top: 0px;
+      }
     }
 
     .stats {
+      clear: both;
+    }
+
+    .profile-pic-container {
       float: left;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
     }
   }
 }
