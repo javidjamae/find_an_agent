@@ -19,6 +19,9 @@
       <div class="price-stats">
         <b>Price:</b> $0 - $150k: <%= agent.agent_stat.pr1 %> $150k - $300k: <%= agent.agent_stat.pr2 %> $300k - $500k: <%= agent.agent_stat.pr3 %> $500k - $750k: <%= agent.agent_stat.pr4 %> $750k - $1m: <%= agent.agent_stat.pr5 %> $1m+: <%= agent.agent_stat.pr6 %>
       </div>
+      <div class="intro-button-wrapper">
+        <button class="connect-button" data-agent-id="<%= agent.id %>">Connect to this agent</button>
+      </div>
     </div>
   </div>
 <% end %>
