@@ -23,7 +23,7 @@ class AgentSearch < ApplicationRecord
     stats = AgentStat.all
     normalized_stats = get_normalized_agent_stats( stats )
     weighted_stats = weight_normalized_stats( normalized_stats )
-    sorted_stats = weighted_stats.sort_by { |key, value| value[:total] }
+    sorted_stats = weighted_stats.sort_by { |key, value| value[:total] }.reverse
     self.agent_ids = sorted_stats.map { |s| s[0] }
   end
 

@@ -2,7 +2,9 @@ class AgentSearchesController < ApplicationController
 
   def show
     @search = AgentSearch.find(params[:id])
-    @agents = Agent.where(id: @search.agent_ids.split(","))
+    agent_ids = @search.agent_ids.gsub(/[\[\]\s]/, '').split(",")
+    @agents = Agent.where(id: agent_ids)
+    @agents = @agents.sort_by { |agent| agent_ids.index( agent.id.to_s ) }
   end
 
   def create
