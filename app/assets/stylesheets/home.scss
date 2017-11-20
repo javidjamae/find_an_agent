@@ -1,7 +1,11 @@
 .content {
   color: #444;
   margin: 0 auto;
+  margin-top: 80px;
   width: 900px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 25px;
 }
 
 fieldset {
@@ -17,8 +21,11 @@ h3 {
 }
 
 header {
+
   h1 {
     text-align: center;
+    position: relative;
+    margin-top: 0;
   }
 }
 

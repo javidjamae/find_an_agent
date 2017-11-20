@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  height: 100%;
+}
+
+#content-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-image: url('https://d1xt9s86fx9r45.cloudfront.net/assets/v3/backgrounds/quiz-flow-large-opt-dark-a3383442c0248db856324a38839e354a01a7597662fa78065ebd48ad49c9fec1.jpg');
+}
+
+.top-nav {
+  padding: 20px;
+}
+
+
+
+/*
+*/
